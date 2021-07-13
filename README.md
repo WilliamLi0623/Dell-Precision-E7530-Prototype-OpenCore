@@ -49,14 +49,14 @@ You have to compare your current DSDT with the patched DSDT, and change the memo
 
 ## What will never* work
 
-- TrackPoint and all physical buttons except bottom left key (WIP: VoodooI2C)
-- SDHC (WIP: RealtekPCIeCardReader)
+- TrackPoint and all physical buttons except bottom left key (WIP: [VoodooI2C](https://github.com/VoodooI2C/VoodooI2C/pull/445))
+- SDHC (WIP: [RealtekPCIeCardReader](https://github.com/0xFireWolf/RealtekPCIeCardReader/issues/3))
 - Fingerprint
 
 _* Not unless someone decides to make custom kexts for these, of course._
 
 ## Credits
 
-https://github.com/nnkn/hackintosh-dell-precision-7540-oc and OSXLatitude.com for inspiring DDGPU fix and I2C fix
+[nnkn's Precision 7540 repo](https://github.com/nnkn/hackintosh-dell-precision-7540-oc) and [OSXLatitude.com](https://osxlatitude.com/forums/topic/16159-solved-precision-7530-prototype-smbios-cannot-be-properly-injected-i2c-not-working-mux-control-in-bios-reset-after-restart/) for inspiring DDGPU fix and I2C fix
 
-The /r/Hackintosh Discord for providing DSDT.aml patches and patching ideas
+The /r/Hackintosh Discord and [Kishor Prins](https://github.com/VoodooI2C/VoodooI2C/issues/463) for providing DSDT.aml patches and patching ideas
