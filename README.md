@@ -26,6 +26,18 @@ In order to achieve a stable sleep, you're responsible of disabling the followin
 
 You have to compare your current DSDT with the patched DSDT, and change the memory address for certain built-in PCI devices to work. This is a _must_, because we use a DSDT injection here.
 
+## Reference Specs
+
+CPU: QNVH i7 8750H Engineering Sample (2.0, 2.9, 3.6; Overclocked to 2.0, 3.6, 3.6)
+
+GPU: Coffee Lake UHD 630; AMD WX 4150 (fake-id to WX 4100, WX 3200 also supported)
+
+MLB: Precision E7530, BIOS version 99.0.0, CFG Lock disabled by default
+
+RAM: 3200 16G Dual Channel
+
+SSD: Doesn't really matter
+
 ## What works
 
 - Full hardware acceleration
@@ -52,6 +64,7 @@ You have to compare your current DSDT with the patched DSDT, and change the memo
 - TrackPoint and all physical buttons except bottom left key (WIP: [VoodooI2C](https://github.com/VoodooI2C/VoodooI2C/pull/445))
 - SDHC (WIP: [RealtekPCIeCardReader](https://github.com/0xFireWolf/RealtekPCIeCardReader/issues/3))
 - Fingerprint
+- Optimus. Currently only iGPU for internal screen, and only dGPU for external screens.
 
 _* Not unless someone decides to make custom kexts for these, of course._
 
