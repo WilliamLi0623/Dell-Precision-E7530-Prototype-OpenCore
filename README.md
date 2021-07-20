@@ -49,6 +49,7 @@ SSD: Doesn't really matter
 - Mini DP and HDMI output
 - Keyboard and F-key (F11/ F12 as brightness keys)
 - Sleep
+- SD card reader
 
 ## What's untested
 
@@ -62,7 +63,6 @@ SSD: Doesn't really matter
 ## What will never* work
 
 - TrackPoint and all physical buttons except bottom left key (WIP: [VoodooI2C](https://github.com/VoodooI2C/VoodooI2C/pull/445))
-- SDHC (WIP: [RealtekPCIeCardReader](https://github.com/0xFireWolf/RealtekPCIeCardReader/issues/3))
 - Fingerprint
 - Optimus. Currently only iGPU for internal screen, and only dGPU for external screens.
 
@@ -73,3 +73,5 @@ _* Not unless someone decides to make custom kexts for these, of course._
 [nnkn's Precision 7540 repo](https://github.com/nnkn/hackintosh-dell-precision-7540-oc) and [OSXLatitude.com](https://osxlatitude.com/forums/topic/16159-solved-precision-7530-prototype-smbios-cannot-be-properly-injected-i2c-not-working-mux-control-in-bios-reset-after-restart/) for inspiring DDGPU fix and I2C fix
 
 The /r/Hackintosh Discord and [Kishor Prins](https://github.com/VoodooI2C/VoodooI2C/issues/463) for providing DSDT.aml patches and patching ideas
+
+[u/JohnnyCesh](https://www.reddit.com/r/hackintosh/comments/nzsyqo/inspiron_15_r_se_7520_big_sur_115_beta_2_success/) for 11.3+ Brightness control fix
