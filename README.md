@@ -1,6 +1,10 @@
 # Dell-Precision-E7530-Prototype-OpenCore
 Install _cursed_ macOS **only** on your Prototype Dell Precision 7530 workstations.
 
+Supported OS: **macOS 11.5** (macOS 12 should be as well).
+
+This repo utilizes **OpenCore MOD** for Windows and other OS compability.  
+
 ## Requirement
 If you have a cursed "Precision E7530" laptop.
 
