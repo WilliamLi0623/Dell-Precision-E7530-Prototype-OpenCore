@@ -67,7 +67,7 @@ SSD: Doesn't really matter
 ## What will never* work
 
 - TrackPad physical buttons except bottom left key (WIP: [VoodooI2C](https://github.com/VoodooI2C/VoodooI2C/pull/445))
-- ALPS U1 Dual Pointing StickPointer Support ([See here for details:](https://github.com/blankmac/AlpsT4USB/issues/8))
+- ALPS U1 Dual Pointing StickPointer Support ([See here for details](https://github.com/blankmac/AlpsT4USB/issues/8))
 - Fingerprint
 - Optimus. Currently only iGPU for internal screen, and only dGPU for external screens.
 
