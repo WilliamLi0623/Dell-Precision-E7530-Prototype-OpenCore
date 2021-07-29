@@ -1,7 +1,7 @@
 # Dell-Precision-E7530-Prototype-OpenCore
 Install _cursed_ macOS **only** on your Prototype Dell Precision 7530 workstations.
 
-Supported OS: **macOS 11.5** (macOS 12 should be as well).
+Supported OS: **macOS 12 DP4**
 
 This repo utilizes **OpenCore MOD** for Windows and other OS compability.  
 
@@ -78,4 +78,10 @@ _* Not unless someone decides to make custom kexts for these, of course._
 
 The /r/Hackintosh Discord and [Kishor Prins](https://github.com/VoodooI2C/VoodooI2C/issues/463) for providing DSDT.aml patches and patching ideas
 
+And everyone else for creating kexts and kernel patches being used in this repo
+
+## Still credits, but for 11.3+ Support
+
 [u/JohnnyCesh](https://www.reddit.com/r/hackintosh/comments/nzsyqo/inspiron_15_r_se_7520_big_sur_115_beta_2_success/) for 11.3+ Brightness control fix
+
+[Syncretic](https://forums.macrumors.com/threads/latebloom-an-experimental-workaround-for-the-11-3-race-condition.2303986/) for 11.3+ PCI race condition workaround
