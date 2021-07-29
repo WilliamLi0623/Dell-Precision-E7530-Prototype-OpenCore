@@ -53,7 +53,7 @@ SSD: Doesn't really matter
 - Mini DP and HDMI output
 - Keyboard and F-key (F11/ F12 as brightness keys)
 - Sleep
-- SD card reader
+- [SD card reader](https://github.com/0xFireWolf/RealtekCardReader/issues/3)
 
 ## What's untested
 
@@ -66,7 +66,8 @@ SSD: Doesn't really matter
 
 ## What will never* work
 
-- TrackPoint and all physical buttons except bottom left key (WIP: [VoodooI2C](https://github.com/VoodooI2C/VoodooI2C/pull/445))
+- TrackPad physical buttons except bottom left key (WIP: [VoodooI2C](https://github.com/VoodooI2C/VoodooI2C/pull/445))
+- ALPS U1 Dual Pointing StickPointer Support ([See here for details:](https://github.com/blankmac/AlpsT4USB/issues/8))
 - Fingerprint
 - Optimus. Currently only iGPU for internal screen, and only dGPU for external screens.
 
