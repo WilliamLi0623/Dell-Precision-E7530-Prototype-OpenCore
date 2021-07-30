@@ -19,12 +19,24 @@ A few required or otherwise useful steps to take on a running macOS system on yo
 
 Just generate a new set with OpenCore Configurator and you're good to go
 
-**Disabling Power-related Settings**
+**Fixing Sleep**
 
-In order to achieve a stable sleep, you're responsible of disabling the following:
-- Power Nap (if available)
-- Wake for Internet Access
-- tcpkeepalive (hint: `sudo pmset -a tcpkeepalive 0`)
+In order to achieve a stable sleep, you're [responsible of disabling the following:](https://github.com/dortania/OpenCore-Post-Install/blob/master/universal/sleep.md)
+```
+sudo pmset autopoweroff 0
+sudo pmset powernap 0
+sudo pmset standby 0
+sudo pmset proximitywake 0
+sudo pmset tcpkeepalive 0
+```
+
+This will do 5 things for us:
+
+1. Disables autopoweroff: This is a form of hibernation
+2. Disables powernap: Used to periodically wake the machine for network, and updates(but not the display)
+3. Disables standby: Used as a time period between sleep and going into hibernation
+4. Disables wake from iPhone/Watch: Specifically when your iPhone or Apple Watch come near, the machine will wake
+5. Disables TCP Keep Alive mechanism to prevent wake ups every 2 hours
 
 **Check your PCI memory address**
 
@@ -83,6 +95,6 @@ And everyone else for creating kexts and kernel patches being used in this repo
 
 ## Still credits, but for 11.3+ Support
 
-[u/JohnnyCesh](https://www.reddit.com/r/hackintosh/comments/nzsyqo/inspiron_15_r_se_7520_big_sur_115_beta_2_success/) for 11.3+ Brightness control fix
+[u/JohnnyCesh](https://www.reddit.com/r/hackintosh/comments/nzsyqo/inspiron_15_r_se_7520_big_sur_115_beta_2_success/) for 11.3+ Brightness control fix. Could be useful for other MUX-active dual GPU laptop systems.
 
-[Syncretic](https://forums.macrumors.com/threads/latebloom-an-experimental-workaround-for-the-11-3-race-condition.2303986/) for 11.3+ PCI race condition workaround
+[Syncretic](https://forums.macrumors.com/threads/latebloom-an-experimental-workaround-for-the-11-3-race-condition.2303986/) for 11.3+ PCI race condition workaround. This fixes (1) Airport Card not working after cold or hot reboot and (2) sometimes not loading the OS due to PCI allocation problems. Could be useful for other systems with a lot of PCI devices.
