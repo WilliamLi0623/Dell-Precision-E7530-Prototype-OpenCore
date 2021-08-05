@@ -72,14 +72,6 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>Keyboard map</string>
-				<key>Enabled</key>
-				<true/>
-				<key>Path</key>
-				<string>SSDT-RMCF-PS2Map-dell.aml</string>
-			</dict>
-			<dict>
-				<key>Comment</key>
 				<string>Thunderbolt 3</string>
 				<key>Enabled</key>
 				<true/>
