@@ -8,20 +8,20 @@ This repo utilizes **OpenCore MOD** for Windows and other OS compability.
 ## Requirement
 If you have a cursed "Precision E7530" laptop.
 
-**What you should do if you're looking to install on a production 7\*30 or 7\*40?**
+### What you should do if you're looking to install on a production 7\*30 or 7\*40?
 
 The DSDT.aml includes three things: (1) fixes for the prototype ACPI; (2) Dell EV3 MUX patch; (3) I2C patch.
 
-Although this is **not being tested**, you may still try deleting the DST.aml and adding the [EV3 patch](https://github.com/nnkn/hackintosh-dell-precision-7540-oc/blob/main/EFI/OC/ACPI/SSDT-EV3-BAN-PEGP-VINI.aml) and the [I2C patches](https://github.com/nnkn/hackintosh-dell-precision-7540-oc/blob/main/EFI/OC/ACPI/SSDT-I2C.aml) from nnkn's 7540 repo. I do suggest you to use mine as a base repo as the config.plist there is troublesome and outdated, unless you want to prepare everything from scratch.
+Although this is *not being tested*, you may still try deleting the DDST.aml and adding the [EV3 patch](https://github.com/nnkn/hackintosh-dell-precision-7540-oc/blob/main/EFI/OC/ACPI/SSDT-EV3-BAN-PEGP-VINI.aml) and the [I2C patches](https://github.com/nnkn/hackintosh-dell-precision-7540-oc/blob/main/EFI/OC/ACPI/SSDT-I2C.aml) from nnkn's 7540 repo. I do suggest you to use mine as a base repo as the config.plist there is troublesome and outdated, unless you want to prepare everything from scratch.
 
 ## Post-installation tweaks
 A few required or otherwise useful steps to take on a running macOS system on your laptop:
 
-**Using your own serial number**
+### Using your own serial number
 
 Just generate a new set with OpenCore Configurator and you're good to go
 
-**Fixing Sleep**
+### Fixing Sleep
 
 In order to achieve a stable sleep, you're [responsible of disabling the following:](https://github.com/dortania/OpenCore-Post-Install/blob/master/universal/sleep.md)
 ```
@@ -40,11 +40,11 @@ This will do 5 things for us:
 4. Disables wake from iPhone/Watch: Specifically when your iPhone or Apple Watch come near, the machine will wake
 5. Disables TCP Keep Alive mechanism to prevent wake ups every 2 hours
 
-**Check your PCI memory address**
+### Checking your PCI memory address
 
 You have to compare your current DSDT with the patched DSDT, and change the memory address for certain built-in PCI devices to work. This is a _must_, because we use a DSDT injection here.
 
-**Keyboard f-key**
+### Keyboard f-key
 
 Instead of using an ACPI patch, Karabiner-Elements can help us achieve a software-based solution to emulate function keys as a real Mac keyboard. To achieve this, Karabiner-Elements is required to be installed. Under `Keyboard (Apple)`, we define `delete-forward` to `fn` and `keypad_num_lock` to `delete_forward`. Without sacrificing any key being used (`keypad_num_lock` does nothing on macOS), this best simulates a Magic Keyboard layout.
 
@@ -99,7 +99,7 @@ The /r/Hackintosh Discord and [Kishor Prins](https://github.com/VoodooI2C/Voodoo
 
 And everyone else for creating kexts and kernel patches being used in this repo
 
-## Still credits, but for 11.3+ Support
+### For 11.3+ Support
 
 [u/JohnnyCesh](https://www.reddit.com/r/hackintosh/comments/nzsyqo/inspiron_15_r_se_7520_big_sur_115_beta_2_success/) for 11.3+ Brightness control fix. Could be useful for other MUX-active dual GPU laptop systems.
 
