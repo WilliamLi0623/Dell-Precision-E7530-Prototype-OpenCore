@@ -8,9 +8,11 @@ This repo utilizes **OpenCore MOD** for Windows and other OS compability.
 ## Requirement
 If you have a cursed "Precision E7530" laptop.
 
-**What you should do if you don't?**
+**What you should do if you're looking to install on a production 7\*30 or 7\*40?**
 
-Scroll to bottom, go to the nnkn repo, and use their EFI instead. Regular 7x30 and 7x40 EFI should be interchangable and compatible.
+The DSDT.aml includes three things: (1) fixes for the prototype ACPI; (2) Dell EV3 MUX patch; (3) I2C patch.
+
+Although this is **not being tested**, you may still try deleting the DST.aml and adding the [EV3 patch](https://github.com/nnkn/hackintosh-dell-precision-7540-oc/blob/main/EFI/OC/ACPI/SSDT-EV3-BAN-PEGP-VINI.aml) and the [I2C patches](https://github.com/nnkn/hackintosh-dell-precision-7540-oc/blob/main/EFI/OC/ACPI/SSDT-I2C.aml) from nnkn's 7540 repo. I do suggest you to use mine as a base repo as the config.plist there is troublesome and outdated, unless you want to prepare everything from scratch.
 
 ## Post-installation tweaks
 A few required or otherwise useful steps to take on a running macOS system on your laptop:
