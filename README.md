@@ -44,7 +44,7 @@ You have to compare your current DSDT with the patched DSDT, and change the memo
 
 **Keyboard f-key**
 
-Instead of using an ACPI patch, Karabiner-Elements can help us achieve a software-based solution to emulate function keys as a real Mac keyboard. To achieve this, Karabiner-Elements is required to be installed. We define `delete-forward` to `fn` and `keypad_num_lock` to `delete_forward`. Without sacrificing any key being used (`keypad_num_lock` does nothing on macOS), this best simulates a Mac layout.
+Instead of using an ACPI patch, Karabiner-Elements can help us achieve a software-based solution to emulate function keys as a real Mac keyboard. To achieve this, Karabiner-Elements is required to be installed. Under `Keyboard (Apple)`, we define `delete-forward` to `fn` and `keypad_num_lock` to `delete_forward`. Without sacrificing any key being used (`keypad_num_lock` does nothing on macOS), this best simulates a Magic Keyboard layout.
 
 ## Reference Specs
 
