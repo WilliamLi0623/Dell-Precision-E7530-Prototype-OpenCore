@@ -42,6 +42,10 @@ This will do 5 things for us:
 
 You have to compare your current DSDT with the patched DSDT, and change the memory address for certain built-in PCI devices to work. This is a _must_, because we use a DSDT injection here.
 
+**Keyboard f-key**
+
+Instead of using an ACPI patch, Karabiner-Elements can help us achieve a software-based solution to emulate function keys as a real Mac keyboard. To achieve this, Karabiner-Elements is required to be installed. We define `delete-forward` to `fn` and `keypad_num_lock` to `delete_forward`. Without sacrificing any key being used (`keypad_num_lock` does nothing on macOS), this best simulates a Mac layout.
+
 ## Reference Specs
 
 CPU: QNVH i7 8750H Engineering Sample (2.0, 2.9, 3.6; Overclocked to 2.0, 3.6, 3.6)
@@ -63,9 +67,9 @@ SSD: Doesn't really matter
 - USB ports (Type-A and C)
 - CPU Temperature and voltage/wattage reading
 - Mini DP and HDMI output
-- Keyboard and F-key (F11/ F12 as brightness keys)
 - Sleep
 - [SD card reader](https://github.com/0xFireWolf/RealtekCardReader/issues/3)
+- Everything else
 
 ## What's untested
 
