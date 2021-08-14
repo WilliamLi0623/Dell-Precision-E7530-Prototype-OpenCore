@@ -40,6 +40,8 @@ This will do 5 things for us:
 4. Disables wake from iPhone/Watch: Specifically when your iPhone or Apple Watch come near, the machine will wake
 5. Disables TCP Keep Alive mechanism to prevent wake ups every 2 hours
 
+Also make sure you disable the two BT power pins on the back if you're using DW1820a.
+
 ### Checking your PCI memory address
 
 You have to compare your current DSDT with the patched DSDT, and change the memory address for certain built-in PCI devices to work. This is a _must_, because we use a DSDT injection here.
@@ -76,7 +78,7 @@ SSD: Doesn't really matter
 ## What's untested
 
 - Hibernation
-- Thunderbolt 3 (hot-plug not supported)
+- Thunderbolt 3
 
 ## What's not yet working
 
@@ -88,6 +90,7 @@ SSD: Doesn't really matter
 - ALPS U1 Dual Pointing StickPointer Support ([See here for details](https://github.com/blankmac/AlpsT4USB/issues/8))
 - Fingerprint
 - Optimus. Currently only iGPU for internal screen, and only dGPU for external screens.
+- TB3 Hot-Plug for Prototype NVM
 
 _* Not unless someone decides to make custom kexts for these, of course._
 
