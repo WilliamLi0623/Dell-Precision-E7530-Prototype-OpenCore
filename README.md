@@ -61,7 +61,7 @@ The specific place for the variable will differ, depending on your specific BIOS
 
 CPU: QNVH i7 8750H Engineering Sample (2.0, 2.9, 3.6; Overclocked to 2.0, 3.6, 3.6)
 
-GPU: Coffee Lake UHD 630; AMD WX 4150 (fake-id to WX 4100, WX 3200 also supported)
+GPU: Coffee Lake UHD 630; AMD WX 4150 (fake-id to Radeon Pro 460, WX 3200 also supported)
 
 MLB: Precision E7530, BIOS version 99.0.0, CFG Lock disabled by default
 
