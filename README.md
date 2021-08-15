@@ -50,6 +50,13 @@ You have to compare your current DSDT with the patched DSDT, and change the memo
 
 Instead of using an ACPI patch, Karabiner-Elements can help us achieve a software-based solution to emulate function keys as a real Mac keyboard. To achieve this, Karabiner-Elements is required to be installed. Under `Keyboard (Apple)`, we define `delete-forward` to `fn` and `keypad_num_lock` to `delete_forward`. Without sacrificing any key being used (`keypad_num_lock` does nothing on macOS), this best simulates a Magic Keyboard layout.
 
+### Advanced UEFI Options, change via setup_var
+
+The specific place for the variable will differ, depending on your specific BIOS version. These options are all BIOS Advanced Menu options, but Dell just locked them.
+
+- Setting CPU to maximum frequency: 0x5e9, 5ea, 5eb, 5ec, 5ed, 5ee to 0x24. This makes the CPU boosts to 3.6Ghz (100x36) under full load.
+- Allowing TB3 Hot-Plug: 0x4bc to 0x01 (Force Thunderbolt 3 GPIO Power). However due to a bug in the early NVM that is not solved yet, Type-C Hot-Plug (IOElectrify) will not work and often causes KP. The Titan Ridge chip will be correctly identified as two ExpressCard controllers, but the USB-C will not function correctly. On a production hardware changing this option should work.
+
 ## Reference Specs
 
 CPU: QNVH i7 8750H Engineering Sample (2.0, 2.9, 3.6; Overclocked to 2.0, 3.6, 3.6)
